@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+    <title>Flappy Bird</title>
+</head>
+
+<body>
+    <header>
+        <p id="fb"><b>Record: </b><i id="r"></i></p>
+        <div id="m">
+            <br />
+            <br />
+            <br />
+            <button id="restart-btn" style="visibility: hidden;">Restart</button>
+            <br />
+            <br />
+            <br />
+            <button class="share" id="share-btn" style="visibility: hidden;" >Share Score</button>
+        </div>
+    </header>
+    <p align="center"><canvas id="canvas"
+            width="288"
+            height="512"
+            onclick="moveUp()"></canvas></p>
+    <script src="FlappyBird.js"></script>
+    <link rel="stylesheet"
+    href='flappyBird.css'>
+</body>
+<script src="games.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</html>
